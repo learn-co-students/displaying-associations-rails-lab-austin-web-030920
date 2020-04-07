@@ -1,0 +1,7 @@
+<% binding.pry %>
+<ul>
+    <%= @songs.each do |s| %>
+    <% binding.pry %>
+    <li> <%= link_to "#{s.artist_name.titlecase}" + '-' + "#{s.title.titlecase}", artist_path(s.artist)%></li>
+    <% end %>
+</ul>

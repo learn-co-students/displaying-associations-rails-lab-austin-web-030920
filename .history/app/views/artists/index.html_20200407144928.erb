@@ -1,0 +1,9 @@
+
+
+
+<%= Artist.all.each do |a| %>
+<%= plualize(a.song_count, "Song") 
+<ul>
+<li> <%= link_to a.name, artist_path(a) %></li>
+</ul>
+<% end %>
